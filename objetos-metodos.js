@@ -1,22 +1,23 @@
-// ejemplo  de objeto con metodos
+// ejemplo de objeto con metodos
 
 // datos de un producto
 const producto= {
     id:"p-07",
-    nombre:"Agua de jamaica",
-    precio: 15,
-    categoria:"bebidas",
+    nombre:"agua de jamaica",
+    precio:15,
+    categoria:"bebida",
     disponible:true,
-    //metodos
-    resumen() {
-    return this.nombre +" -$" + this.precio + " ("+ this.categoria + ")";
+// metodos
+    resumen(){
+        return this.nombre + " - $" + this.precio + "("+ this.categoria + ")";
     },
-     estaDisponible() {
-     return this.disponible;
+    estadisponible(){
+        return this.disponible;
     }
-    
+
+
 };
 
-// paso 1 demostrando el objeto
-console.log("---Objeto completo---");
+// paso uno demostramdo el objeto
+console.log("---objeto completo---")
 console.log(producto);
